@@ -35,7 +35,7 @@ curl -sfL https://get.k3s.io | sh -
 # Install Longhorn
 long horn is a Provisioned Volume manager that syncs volumes across nodes so pods always have access to their data.
 Using Rancher ui, browse to apps and search for Longhorn.
-When installing make sure to set Default Sturage Class to True, Replica count to 3 or the number of nodes you have if less.
+When installing make sure to set Default Storage Class to True, Replica count to 3 or the number of nodes you have if less.
 Click install.
 
 # Join worker nodes
