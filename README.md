@@ -32,11 +32,5 @@ curl -sfL https://get.k3s.io | sh -
 
 ### rancher.lan should point to your master node or if you have multiple master nodes, to a seperate nginx server acting as a load balancer for all your master nodes.
 
-# Install Longhorn
-long horn is a Provisioned Volume manager that syncs volumes across nodes so pods always have access to their data.
-Using Rancher ui, browse to apps and search for Longhorn.
-When installing make sure to set Default Storage Class to True, Replica count to 3 or the number of nodes you have if less.
-Click install.
-
 # Join worker nodes
 curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
