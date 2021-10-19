@@ -22,7 +22,7 @@ curl -sfL https://get.k3s.io | sh -
 
 `helm repo update`
 
-`export KUBECONFIG=/etc/rancher/k3s/k3s.yaml`
+`cp /etc/rancher/k3s/k3s.yaml ~/.kube/config`
 
 `helm install cert-manager jetstack/cert-manager --namespace cert-manager --version v1.5.4`
 
